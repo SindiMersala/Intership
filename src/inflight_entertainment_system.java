@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Scanner;
 
 
-public class inflight_entertainment_system {
+public class inflight_entertertainment_system {
     public static void main(String[] args){
         Scanner k= new Scanner(System.in);
         System.out.println("Put how many minutes the flight is: ");
@@ -13,7 +14,7 @@ public class inflight_entertainment_system {
         List<Integer> movies=new ArrayList<>();
         movies.add(30);
         movies.add(40);
-        movies.add(20);
+
         movies.add(60);
         movies.add(100);
         if(length(movies,flight_length)==true){
@@ -36,7 +37,7 @@ public class inflight_entertainment_system {
 
         for(int l=0;l<k.size();l++){
             for(int f=0;f<k.size();f++){
-                if((m[l][f]+m[l][f+1])==length_ && m[l][f]!=m[l][f+1]){
+                if((m[l][f]+m[l][f+1])==length_ && l!=f+1){
                     n=true;
                     break;
                 }
