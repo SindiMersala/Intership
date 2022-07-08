@@ -37,7 +37,7 @@ public class inflight_entertertainment_system {
 
         for(int l=0;l<k.size();l++){
             for(int f=0;f<k.size();f++){
-                if((m[l][f]+m[l][f+1])==length_ && l!=f+1){
+                if((m[l][f]+m[l][f+1])==length_ && l!=f+1)
                     n=true;
                     break;
                 }
